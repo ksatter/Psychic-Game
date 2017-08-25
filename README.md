@@ -1,2 +1,2 @@
-# Psychic-Game
-Guess the letter
+# Hangman-Game
+Simple Javascript hangman game. 
