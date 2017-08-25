@@ -37,7 +37,7 @@ document.onkeyup = function(event) {
 
         guessesLeft--;
         guessesMade.push(userGuess);
-        pushTo("guesses-made", "Your guesses so far: " + guessesMade.join(", "));
+        pushTo("guesses-made", "Your guesses so far: " + guessesMade.join(",  "));
 
         //Outlines what to do if user guess is wrong
         if (userGuess !== computerGuess) {
@@ -48,7 +48,7 @@ document.onkeyup = function(event) {
             }
             //loss
             else {
-                pushTo("main-text", "So sorry, I was thinking of " + computerGuess + ". You must not be a Fake Psychic. Sad! If you think you can do better, pick a letter and try again.");
+                pushTo("main-text", "So sorry, I was thinking of " + computerGuess + ". Fake Psychic. Sad! If you think you can do better, pick a letter and try again.");
                 losses++;
                 pushTo("losses", "Losses: " + losses);
                 reset();
